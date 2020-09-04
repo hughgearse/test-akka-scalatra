@@ -14,7 +14,6 @@ lazy val test = (project in file("."))
 			"com.typesafe.akka" %% "akka-cluster" % AkkaVersion,
 			"com.typesafe.akka" %% "akka-slf4j" % AkkaVersion,
 			"com.typesafe" % "config" % "1.3.2",
-			"org.scalatra" %% "scalatra" % ScalatraVersion,
 			"javax.servlet" % "javax.servlet-api" % "3.1.0",
 		)
 	).enablePlugins(ScalatraPlugin)

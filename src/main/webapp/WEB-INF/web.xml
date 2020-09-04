@@ -4,17 +4,13 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-    <!--
-      This listener loads a class in the default package called Scalatra.
-      That class should implement org.scalatra.LifeCycle.  Your app can be
-      configured in Scala code there.
-    -->
-    <context-param>
-        <param-name>org.scalatra.LifeCycle</param-name>
-        <param-value>ScalatraBootstrap</param-value>
-    </context-param>
-    <listener>
-        <listener-class>org.scalatra.servlet.ScalatraListener</listener-class>
-    </listener>
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
 
 </web-app>
